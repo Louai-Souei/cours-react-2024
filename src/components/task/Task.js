@@ -1,7 +1,8 @@
 import "./task.css";
 
 function Task(props) {
-  console.log("props: ", props);
+  console.log("🚀 ~ Task ~ props:", props);
+  //console.log("props: ", props);
   return (
     <>
       <div className="task" style={{ backgroundColor: "cyan" }}>
