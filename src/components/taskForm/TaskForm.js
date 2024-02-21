@@ -1,6 +1,7 @@
 import "./taskform.css" 
 
-function TaskForm(){
+function TaskForm(props){
+    props.sayHello(' value')
     return(
         <div className="taskForm">
             <form action="" className="form">

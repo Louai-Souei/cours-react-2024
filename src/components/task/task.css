@@ -9,6 +9,10 @@
 
 }
 
+.custom-task {
+    color: red;
+}
+
 .task span {
     padding-right: 10px;
 }

@@ -5,7 +5,7 @@ function Task(props) {
   //console.log("props: ", props);
   return (
     <>
-      <div className="task" style={{ backgroundColor: "cyan" }}>
+      <div className={`task ${props.duration<=60 ? "custom-task" : "" }`} style={{ backgroundColor: "cyan" }}>
         <div className="title">{props.title}</div>
         <div className="title">{props.duration}</div>
         {props.details && (
