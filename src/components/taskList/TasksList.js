@@ -6,7 +6,14 @@ function TasksList(props) {
     <div className="tasks-list">
       {props.tasks.map((t) => {
         return (
-          <Task key={t._id} _id={t._id} title={t.title} duration={t.duration} />
+          <Task
+            key={t._id}
+            _id={t._id}
+            title={t.title}
+            duration={t.duration}
+            deleteTask={props.deleteTask}
+            updateTask={props.updateTask}
+          />
         );
       })}
     </div>
